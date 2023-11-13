@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+    <title>
+        {% block title %}
+        My website
+        {% endblock %}
+    </title>
+</head>
+<body>
+<div class="container-fluid">
+
+    {% block content %}
+    Page not filled
+    {% endblock %}
+
+    <div class="row fixed-bottom modal-footer">
+        <hr>
+        <p>All rights reserved</p>
+    </div>
+</div>
+<script src="{{ url_for('static', filename='js/bootstrap.bundle.min.js')}}"></script>
+</body>
+</html>

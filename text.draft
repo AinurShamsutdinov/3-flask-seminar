@@ -1,1 +1,7 @@
 student1 = Student(name='John', surname='Smith', age=20, sex=1, group='Fancy', id_faculty=1)
+
+    <ul class="nav nav-pills justify-content-end align-items-end">
+        <li class="nav-item"><a href="{{ url_for('index') }}" class="nav-link">Main</a></li>
+        <li class="nav-item"><a href="{{ url_for('data') }}" class="nav-link">Data</a></li>
+    </ul>
+
