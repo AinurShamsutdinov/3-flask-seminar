@@ -18,12 +18,6 @@ def init_db():
     print('OK')
 
 
-@app.cli.command('get-students')
-def get_students():
-    students = Student.query.all()
-    return
-
-
 @app.cli.command('add-students')
 def add_user():
     student1 = Student(name='John', surname='Smith', age=20, sex=1, group='Fancy', id_faculty=1)
