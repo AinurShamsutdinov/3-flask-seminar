@@ -1,0 +1,1 @@
+student1 = Student(name='John', surname='Smith', age=20, sex=1, group='Fancy', id_faculty=1)
