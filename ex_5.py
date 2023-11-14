@@ -57,7 +57,9 @@ def userpage():
     user = User.query.filter(User.id == user_id).first()
     context = {
         'name': user.name,
-        'email': user.email
+        'email': user.email,
+        'agreement': user.agreement,
+        'birth_date': user.birth_date
     }
     return render_template('userpage.html', **context)
 
